@@ -26,7 +26,7 @@ function Categories() {
                         <h5 className="card-title">{e.title}</h5>
                         <p className="card-text">{e.adsCount ?? 0} Products</p>
                         <div className="d-flex">
-                            <a href={`/ads/all/${e.slug}`} className="btn btn btn-outline-success btn-sm ms-auto">View Products</a>
+                            <a href={`/ads/all/${e.slug}`} className="btn btn btn-outline-dark btn-sm ms-auto">View Products</a>
                         </div>
                     </div>
                 </div>

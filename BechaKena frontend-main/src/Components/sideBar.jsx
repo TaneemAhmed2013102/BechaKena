@@ -49,7 +49,7 @@ function SideBar(props) {
                     location = "all"; 
                   }
                   window.location.href = `/ads/${location}/${category}`;
-                }} type="button" className={"btn btn-outline-success ms-2 mb-2 " + ((e.slug == props.location) ? "active" : "")}>
+                }} type="button" className={"btn btn-outline-dark ms-2 mb-2 " + ((e.slug == props.location) ? "active" : "")}>
                   {e.title}
                 </button>
               ))}
@@ -72,7 +72,7 @@ function SideBar(props) {
                     }
                     window.location.href = `/ads/${location}/${category}`;
                   }}
-                  className={"list-group-item p-3 rounded " + ((e.slug == props.category) ? "list-group-item-success" : "bg-light")}
+                  className={"list-group-item p-3 rounded " + ((e.slug == props.category) ? "list-group-item-primary" : "bg-light")}
                   style={{ cursor: "pointer"}}
                 >
                   {e.title}

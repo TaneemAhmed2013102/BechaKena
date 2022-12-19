@@ -16,9 +16,9 @@ function Navbar() {
       setListOfLocations(tempList);
       setLocation(localStorage.getItem("location") ?? "all");
       let userToken = localStorage.getItem("userToken");
-      if (userToken) {
-        setMyAccount("");
-        setLogin("d-none");
+      if (userToken){
+          setMyAccount("");
+          setLogin("d-none");
       } else {
         setMyAccount("d-none");
         setLogin("");
@@ -34,21 +34,23 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar fixed-top navbar-expand navbar-dark bg-success">
+    <nav className="color-nav navbar fixed-top navbar-expand navbar-dark">
       <div className="container">
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand text-dark" href="/"><b><i>
           BechaKena
+          </i>
+          </b>
         </a>
         <ul className="navbar-nav me-auto mb-lg-0">
           <li className="nav-item me-1">
             <a href={`/ads/all/all`}>
-              <button className="btn btn-success btn-sm">All Ads</button>
+              <button className="btn btn-dark btn-sm">All Ads</button>
             </a>
           </li>
         </ul>
         <div className="d-flex align-items-center">
           <div className="nav-item me-3">
-            <a className={"text-white text-decoration-none " + myAccount} href="/dashboard">
+            <a className={"text-black text-decoration-none " + myAccount} href="/dashboard">
               My Account
             </a>
           </div>
@@ -58,7 +60,7 @@ function Navbar() {
             </a>
           </div>
           <a href="/post/new">
-            <button className="btn btn-lg btn-warning">Post Your Ad</button>
+            <button className="btn btn-lg btn-dark">Post Your Ad</button>
           </a>
         </div>
       </div>
