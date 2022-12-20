@@ -55,7 +55,7 @@ function Navbar() {
             </a>
           </div>
           <div className="nav-item me-3">
-            <a className={"text-white text-decoration-none " + login} href="/login">
+            <a className={"text-dark text-decoration-none " + login} href="/login">
               Login
             </a>
           </div>

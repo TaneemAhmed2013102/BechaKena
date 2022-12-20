@@ -58,7 +58,7 @@ function SelectLocationCategory() {
       <div className="container bg-light rounded" style={{ marginTop: "80px" }}>
         <div className="row">
           <div className="col-6 mt-3">
-            <h4>Select a Catagory</h4>
+            <h4>Select a Category</h4>
             <ul className="list-group list-group-flush my-3">
               {listOfCategories.map((e) => (
                 <li
